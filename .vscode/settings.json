@@ -1,0 +1,5 @@
+{
+    "docker-linter.debug": true,
+    "docker-linter.flake8.enable": true,
+    "docker.imageBuildContextPath": "."
+}
