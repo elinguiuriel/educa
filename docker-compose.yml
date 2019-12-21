@@ -18,7 +18,12 @@ services:
 
   db:
     image: postgres:12-alpine
+    volumes:
+      - postgres_data:/var/lib/postgresql/data/
     environment:
-      - POSTGRES_DB=app
-      - POSTGRES_USER=postgress
+      - POSTGRES_DB=educa_dev
+      - POSTGRES_USER=dev_user
       - POSTGRES_PASSWORD=supersecretpassword
+
+volumes: 
+  postgres_data:

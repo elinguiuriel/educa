@@ -1,6 +1,8 @@
 FROM python:3.7-alpine
-LABEL AUTHOR="ELINGUI Pascal Uriel"
+LABEL MAINTAINER="ELINGUI Pascal Uriel"
 
+# set environment variables
+ENV PYTHONDONTWRITEBYTECODE 1
 ENV PYTHONUNBUFFERED 1
 
 COPY ./requirements.txt /requirements.txt
