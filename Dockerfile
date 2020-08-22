@@ -11,6 +11,7 @@ RUN apk add --update --no-cache postgresql-client
 RUN apk add --update --no-cache --virtual .tmp-build-deps \
     gcc libc-dev linux-headers postgresql-dev 
 RUN apk add --no-cache jpeg-dev zlib-dev
+RUN apk add --no-cache graphviz # TODO remove in prod
 RUN apk add --no-cache --virtual .build-deps build-base linux-headers
 
 RUN pip install -r /requirements.txt
